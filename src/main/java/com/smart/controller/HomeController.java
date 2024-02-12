@@ -45,4 +45,26 @@ public class HomeController {
         
         return "about";
     }
+    @GetMapping("/signup")
+    public String signupController(Model model)
+    {
+    	model.addAttribute("title","Register - Smart Contact Manager");
+    	
+    	 log.info("Signup controller working perfectly...");
+         log.info("Register Page Landed");
+         log.debug("Signup Page Request !!");
+    	
+    	return "signup";
+    }
+    @GetMapping("/login")
+    public String loginController(Model model)
+    {
+    	model.addAttribute("title","Login - Smart Contact Manager");
+    	
+    	 log.info("Login controller working perfectly...");
+         log.info("Login Page Landed");
+         log.debug("Login Page Request !!");
+    	
+    	return "login";
+    }
 }
