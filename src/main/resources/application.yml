@@ -1,4 +1,4 @@
-logging:
-  level:
-    com.smart: DEBUG
-    root: DEBUG
+#logging:
+#  level:
+#    com.smart: DEBUG
+#    root: DEBUG
