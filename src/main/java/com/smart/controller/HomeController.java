@@ -21,15 +21,15 @@ public class HomeController {
     @Autowired
     private UserRepository repository;
 
-    @GetMapping("/home")
+    @GetMapping("/")
     public String homeController(Model model)
     {
        model.addAttribute("title","Home - Smart Contact Manager");
         
         // Logging messages
           log.info("Home controller working perfectly...");
-//        log.info("New User Added: {}", user);
-//        log.debug("User details: {}", user);
+          log.info("Home Page landed");
+          log.debug("Home Page Request ");
         
         return "home";
     }
@@ -39,9 +39,9 @@ public class HomeController {
        model.addAttribute("title","About - Smart Contact Manager");
         
         // Logging messages
-          log.info("Home controller working perfectly...");
-//        log.info("New User Added: {}", user);
-//        log.debug("User details: {}", user);
+          log.info("About controller working perfectly...");
+          log.info("About Page Landed");
+          log.debug("About Page Request !!");
         
         return "about";
     }
