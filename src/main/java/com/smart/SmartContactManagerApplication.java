@@ -14,6 +14,7 @@ public class SmartContactManagerApplication {
 		SpringApplication.run(SmartContactManagerApplication.class, args);
 		
 		logInfo.info("Main class");
+		
 		logInfo.debug("Debug main class");
 		
 	}
