@@ -6,7 +6,44 @@
 </head>
 <body>
 	<section>
-		<h1>This is Signup page</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="my-card mt-2">
+						<div class="text-center">
+							<img alt="" th:src="@{img/register.png}" style="width: 80px">
+						</div>
+						<h1 class=text-center>REGISTER FORM</h1>
+						<form th:action="@{do_register}" method="post">
+						
+							<div class="mb-3">
+							    <label for="exampleInputPassword1" class="form-label">Your Name</label>
+							    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter here" name="name" required="required">
+							  </div>
+							  <div class="mb-3">
+							    <label for="exampleInputEmail1" class="form-label">Your Email</label>
+							    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter here" name="email" required="required">
+							    
+							  </div>
+						
+							  <div class="mb-3">
+							    <label for="exampleInputPassword1" class="form-label">Your Password</label>
+							    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter here" name="password">
+							  </div>
+							  <div class="mb-3">
+								  <textarea class="form-control" placeholder="Enter Something about yourself" id="floatingTextarea" rows="5"></textarea>
+								  
+								</div>
+							  
+							 <div class="container text-center">
+							 	 <button type="submit" class="btn bg-primary btn-block text-white hover_eff">Submit</button>
+							 	  <button type="reset" class="btn btn-warning btn-block text-white hover_eff">Reset</button>
+							 </div>
+							</form>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 </body>
 </html>
